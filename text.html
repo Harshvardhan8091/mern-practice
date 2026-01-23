@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Info</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+
+        form {
+            background: white;
+            padding: 20px;
+            width: 300px;
+            margin: 40px auto;
+            border-radius: 8px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 6px;
+            margin-top: 5px;
+        }
+
+        .gender {
+            margin-top: 10px;
+        }
+
+        button {
+            margin-top: 15px;
+            width: 100%;
+            padding: 8px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<h2 style="text-align:center;">Personal Information</h2>
+
+<form>
+    <label for="firstName">First Name</label>
+    <input type="text" id="firstName" name="firstName" placeholder="Enter first name" required>
+
+    <label for="lastName">Last Name</label>
+    <input type="text" id="lastName" name="lastName" placeholder="Enter last name" required>
+
+    <label for="image">Upload Image</label>
+    <input type="file" id="image" name="image">
+
+    <label>Gender</label>
+    <div class="gender">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male" required>
+        
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="female">
+        
+    </div>
+
+    <label for="skills">Skills</label>
+    <select name="skills" id="skills">
+        <option value="">Select skill</option>
+        <option value="c++">C++</option>
+        <option value="java">Java</option>
+        <option value="python">Python</option>
+    </select>
+
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
