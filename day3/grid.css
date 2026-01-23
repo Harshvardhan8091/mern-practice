@@ -1,20 +1,23 @@
 /* grid is 2 dimensional layout */
 
 .parent{
-    
+    margin-top: 50px;
+    border: 2px solid black;
     background-color: blueviolet;
     display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px ;
 }
 
 .child{
-    border: 2px solid black;
+    border: 2px solid rgb(58, 46, 46);
 }
 #child1{
     background-color: chocolate;
 }
 
 #child2{
-    background-color: yellowgreen;
+    background-color: green;
 }
 
 #child3{
@@ -22,7 +25,7 @@
 }
 
 #child4{
-    background-color: rebeccapurple;
+    background-color: purple;
 }
 
 #child5{
@@ -30,5 +33,5 @@
 }
 
 #child6{
-    background-color: lightcoral;
+    background-color: yellow;
 }
