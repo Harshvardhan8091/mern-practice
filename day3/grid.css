@@ -1,0 +1,34 @@
+/* grid is 2 dimensional layout */
+
+.parent{
+    
+    background-color: blueviolet;
+    display: grid;
+}
+
+.child{
+    border: 2px solid black;
+}
+#child1{
+    background-color: chocolate;
+}
+
+#child2{
+    background-color: yellowgreen;
+}
+
+#child3{
+    background-color: red;
+}
+
+#child4{
+    background-color: rebeccapurple;
+}
+
+#child5{
+    background-color: blue;
+}
+
+#child6{
+    background-color: lightcoral;
+}
