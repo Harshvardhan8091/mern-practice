@@ -32,8 +32,16 @@
 
 // ////////////////////////////
 
-let user = {
-    firstname: "kai"
+// let user = {
+//     firstname: "kai"
 
-}
-console.log(user.firstname)
+// }
+// console.log(user.firstname)
+
+///////////////////////////////
+
+let i = 10;
+let j = i++;
+i = i + 2;
+let m = --i;
+console.log(i)
