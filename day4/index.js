@@ -10,7 +10,8 @@
 // let a=20;
 // let b="20";
 // let d = a+b;
-// console.log(d);
+// console.log(a===b); //false check datatype
+// console.log(a==b); // gives true donot check datatype
 
 //////////////////////////////
 
@@ -40,8 +41,21 @@
 
 ///////////////////////////////
 
-let i = 10;
-let j = i++;
-i = i + 2;
-let m = --i;
-console.log(i)
+// let i = 10;
+// let j = i++;
+// i = i + 2;
+// let m = --i;
+// console.log(i)
+
+/////////////////////////////////
+
+//comparison operators
+
+// console.log(null > 0) //F
+// console.log(null == 0) //F
+// console.log(null >= 0) //T  // except '==' this operator every operator treat null as number.
+
+// console.log(undefined > 0) //F
+// console.log(undefined == 0) //F
+// console.log(undefined >= 0) //F
+
