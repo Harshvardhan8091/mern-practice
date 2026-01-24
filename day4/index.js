@@ -1,3 +1,4 @@
+/////////////////////////////
 
 // let x=1
 // let y=3
@@ -11,12 +12,28 @@
 // let d = a+b;
 // console.log(d);
 
+//////////////////////////////
 
+// let username ={
+//     firstname: "harsh",
+//     age:18,
+//     email: "harsh@gmail.com"
+// }
+// console.log(username)
+// console.log(typeof (username))
+// console.log(username.firstname)
+// console.log(username['firstname'])
 
-let username ={
-    firstname: "harsh",
-    age:18,
-    email: "harsh@gmail.com"
+///////////////////////////////
+
+// let rollno = [1,2,3,4,5]
+// console.log(rollno)
+// console.log(typeof [])
+
+// ////////////////////////////
+
+let user = {
+    firstname: "kai"
+
 }
-console.log(username)
-console.log(typeof (username))
+console.log(user.firstname)
