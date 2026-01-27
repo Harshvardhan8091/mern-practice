@@ -1,3 +1,4 @@
+///////////////////////////////
 // let count = null;
 // let total = count || 10;
 // console.log("total", total)
@@ -6,6 +7,7 @@
 // let total1 = count1 ?? 10;
 // console.log("total",total1)
 
+////////////////////////////////
 //if-else
 
 // if(true){
@@ -17,4 +19,10 @@
 // console.log(person1)
 // console.log(person2) //we can only access var variable outside other throw error.
 
-//LOOOOOPS
+////////////////////////////////
+//symbols
+// let person1 = Symbol("ank")
+// let person2 = Symbol("ank")
+
+// console.log(person1 == person2)
+// console.log(typeof person1)
