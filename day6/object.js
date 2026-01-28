@@ -44,17 +44,29 @@
 /////////////////////////////////////////
 //CLASS
 
-class Car {
-    constructor(name, year) {
-        this.name = name;
-        this.year = year;
-    }
+// class Car {
+//     constructor(name, year) {
+//         this.name = name;
+//         this.year = year;
+//     }
 
-    age() {
-        let myage = 24;
-        console.log(myage);
-    }
-}
+//     age() {
+//         let myage = 24;
+//         console.log(myage);
+//     }
+// }
 
-const mycar = new Car("ford", 2014);
-mycar.age();
+// const mycar = new Car("ford", 2014);
+// mycar.age();
+
+
+//callback 
+// function fetchdata(callback){
+//     setTimeout(()=>{
+//         callback("data mil gya");
+//     },2000
+// fetchdata((data)=>{
+//     console.log(data))
+// }
+
+
