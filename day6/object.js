@@ -1,0 +1,11 @@
+/////////////////////////////////
+// const person = {
+//     firstname : "rai",
+//     age  : "20",
+//     eyecolor : "brown"
+// }
+// console.log(person)
+
+//////////////////////////////////
+
+

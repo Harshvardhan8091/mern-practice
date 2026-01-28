@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Demo</title>
+    <link rel="stylesheet" href="cal.css">
+</head>
+<body>
+
+<h1 id="text">Hello</h1>
+<button onclick="change()">Click</button>
+
+<script src="cal.js"></script>
+</body>
+</html>
+
+<body>
+    <div class="calculator">
+        <input type="text" id="display" readonly>
+        <div class="buttons">
+            <button onclick="handle('C')">C</button>
+            <button onclick="handle('/')">/</button>
+            <button onclick="handle('*')">*</button>
+            <button onclick="handle('-')">-</button>
+
+            <button onclick="handle('7')">7</button>
+            <button onclick="handle('8')">8</button>
+            <button onclick="handle('9')">9</button>
+            <button onclick="handle('+')">+</button>
+
+            <button onclick="handle('4')">4</button>
+            <button onclick="handle('5')">5</button>
+            <button onclick="handle('6')">6</button>
+            <button onclick="handle('=')">=</button>
+
+            <button onclick="handle('1')">1</button>
+            <button onclick="handle('2')">2</button>
+            <button onclick="handle('3')">3</button>
+            <button onclick="handle('0')" class="zero">0</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
