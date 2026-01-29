@@ -1,0 +1,20 @@
+{
+  "name": "mern",
+  "version": "1.0.0",
+  "description": "M\u0000E\u0000R\u0000N\u0000 \u0000A full-stack web application built using the MERN stack (MongoDB, Express, React, Node.js) to implement real-world backend APIs and a responsive frontend. \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Harshvardhan8091/mern-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Harshvardhan8091/mern-practice/issues"
+  },
+  "homepage": "https://github.com/Harshvardhan8091/mern-practice#readme"
+}
