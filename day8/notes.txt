@@ -1,0 +1,4 @@
+// pipe mai hum khud manually error dhundte hau.
+// pipeline mai isme phale se autoatic error handling hoti hai.
+
+//back pressure 

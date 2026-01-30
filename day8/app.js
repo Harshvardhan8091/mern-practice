@@ -25,12 +25,17 @@
 //     console.log("image read successfully");
 // })
 
-const fs = require('fs')
+////////////////////////////////////////////
 
-fs.readFile("java.jpg", (err, data) => {
-    if (err) throw err;
+// const fs = require('fs')
 
-    fs.writeFile("copy.png", data, () => {
-        console.log("image copied");
-    })
-})
+// fs.readFile("java.jpg", (err, data) => {
+//     if (err) throw err;
+
+//     fs.writeFile("copy.png", data, () => {
+//         console.log("image copied");
+//     })
+// })
+ 
+
+
