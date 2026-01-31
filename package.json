@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/Harshvardhan8091/mern-practice/issues"
   },
-  "homepage": "https://github.com/Harshvardhan8091/mern-practice#readme"
+  "homepage": "https://github.com/Harshvardhan8091/mern-practice#readme",
+  "dependencies": {
+    "express": "npm:Express@^3.0.1",
+    "Express": "^3.0.1"
+  }
 }
