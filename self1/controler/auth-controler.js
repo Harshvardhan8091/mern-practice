@@ -1,0 +1,23 @@
+//home page logic using controllers
+
+const home = async (req, res) =>{
+    try{
+        res
+        .status(200)
+        .send(
+            "welcome to world best mern series by controllers"
+        );
+    } catch (error){
+        console.log(error);
+    }
+};
+
+const register = async (req, res) => {
+    try {
+        res.status(200).send('welcome to registration page again')
+    } catch (error){
+        res.status(400).send({msg:"page not found"})
+    }
+    
+}
+module.exports = {home , register};
