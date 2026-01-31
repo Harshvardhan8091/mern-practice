@@ -1,16 +1,11 @@
 const express = require("express")
 const app = express()
+const authRouter = require("./router/auth-router")
 
-console.log("🔥 THIS IS SELF1 SERVER FILE 🔥")
+app.use("/api/auth", authRouter)
 
-app.get("/", (req, res) => {
-    res.send("NEW HOME FROM SELF1")
-})
 
-app.get("/register", (req, res) => {
-    res.send("NEW REGISTER FROM SELF1")
-})
-
-app.listen(7000, () => {
-    console.log("🚀 SERVER RUNNING ON 7000")
+const port = 7000;
+app.listen(port, () => {
+    console.log("SERVER RUNNING ON 7000")
 })
