@@ -1,66 +1,36 @@
 const express = require("express")
 const fs = require("fs")
-const path = require("path")
 
 const app = express()
 app.use(express.json())
 
-const filePath = path.join(__dirname, "students.json")
-
-const readData = () => {
-    const data = fs.readFileSync(filePath, "utf-8")
-    return JSON.parse(data)
-}
-
-const writeData = (data) => {
-    fs.writeFileSync(filePath, JSON.stringify(data, null, 2))
-}
+const FILE = "students.json"
 
 app.post("/students", (req, res) => {
-    const students = readData()
-    const newStudent = {
-        id: Date.now().toString(),
-        name: req.body.name,
-        email: req.body.email,
-        course: req.body.course
-    }
-    students.push(newStudent)
-    writeData(students)
-    res.status(201).json(newStudent)
-})
-
-app.get("/students", (req, res) => {
-    const students = readData()
-    res.json(students)
-})
-
-app.get("/students/:id", (req, res) => {
-    const students = readData()
-    const student = students.find(s => s.id === req.params.id)
-    if (!student) return res.status(404).json({ message: "Student not found" })
+    const students = JSON.parse(fs.readFileSync(FILE))
+    const student = { id: Date.now().toString(), ...req.body }
+    students.push(student)
+    fs.writeFileSync(FILE, JSON.stringify(students))
     res.json(student)
 })
 
-app.put("/students/:id", (req, res) => {
-    const students = readData()
-    const index = students.findIndex(s => s.id === req.params.id)
-    if (index === -1) return res.status(404).json({ message: "Student not found" })
+app.get("/students", (req, res) => {
+    res.json(JSON.parse(fs.readFileSync(FILE)))
+})
 
-    students[index] = { ...students[index], ...req.body }
-    writeData(students)
-    res.json(students[index])
+app.put("/students/:id", (req, res) => {
+    const students = JSON.parse(fs.readFileSync(FILE))
+    const i = students.findIndex(s => s.id === req.params.id)
+    students[i] = { ...students[i], ...req.body }
+    fs.writeFileSync(FILE, JSON.stringify(students))
+    res.json(students[i])
 })
 
 app.delete("/students/:id", (req, res) => {
-    const students = readData()
-    const filtered = students.filter(s => s.id !== req.params.id)
-    if (students.length === filtered.length)
-        return res.status(404).json({ message: "Student not found" })
-
-    writeData(filtered)
-    res.json({ message: "Student delted" })
+    const students = JSON.parse(fs.readFileSync(FILE))
+    const data = students.filter(s => s.id !== req.params.id)
+    fs.writeFileSync(FILE, JSON.stringify(data))
+    res.json({ message: "deleted" })
 })
 
-app.listen(3000, () => {
-    console.log("Server running on port 3000")
-})
+app.listen(3000)
