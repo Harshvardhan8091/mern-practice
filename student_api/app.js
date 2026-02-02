@@ -21,6 +21,7 @@ app.get("/students", (req, res) => {
 app.put("/students/:id", (req, res) => {
     const students = JSON.parse(fs.readFileSync(FILE))
     const i = students.findIndex(s => s.id === req.params.id)
+    if (i === -1) return res.json({ message: "not found" })
     students[i] = { ...students[i], ...req.body }
     fs.writeFileSync(FILE, JSON.stringify(students))
     res.json(students[i])
@@ -28,9 +29,8 @@ app.put("/students/:id", (req, res) => {
 
 app.delete("/students/:id", (req, res) => {
     const students = JSON.parse(fs.readFileSync(FILE))
-    const data = students.filter(s => s.id !== req.params.id)
-    fs.writeFileSync(FILE, JSON.stringify(data))
+    fs.writeFileSync(FILE, JSON.stringify(students.filter(s => s.id !== req.params.id)))
     res.json({ message: "deleted" })
 })
 
-app.listen(3000)
+app.listen(3000, () => console.log("server running"))
