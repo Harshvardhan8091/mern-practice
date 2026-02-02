@@ -58,7 +58,7 @@ app.delete("/students/:id", (req, res) => {
         return res.status(404).json({ message: "Student not found" })
 
     writeData(filtered)
-    res.json({ message: "Student deleted" })
+    res.json({ message: "Student delted" })
 })
 
 app.listen(3000, () => {
