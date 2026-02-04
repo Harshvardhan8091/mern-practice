@@ -3,10 +3,7 @@ const app = express()
 const authRouter = require("./router/auth-router")
 app.use(express.json());
 
-
 app.use("/api/auth", authRouter)
-
-
 
 const port = 7000;
 app.listen(port, () => {
