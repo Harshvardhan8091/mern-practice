@@ -11,4 +11,7 @@ app.use(
     })
 )
 
-const
+const USER = {
+    username: "harsh",
+    password: "1234"
+};
