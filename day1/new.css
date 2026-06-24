@@ -1,0 +1,107 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#e9ecef;
+    padding:20px;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    background:white;
+    border:2px solid #333;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+header{
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+header p{
+    margin-top:8px;
+}
+
+nav{
+    background:#34495e;
+    text-align:center;
+    padding:12px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#f1c40f;
+}
+
+section{
+    padding:20px;
+    border-bottom:1px solid #ddd;
+}
+
+h2{
+    margin-bottom:15px;
+    color:#2c3e50;
+}
+
+.card-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.card{
+    background:#3498db;
+    color:white;
+    padding:10px 15px;
+    border-radius:5px;
+}
+
+.box{
+    border:1px solid #ccc;
+    padding:15px;
+    margin-bottom:15px;
+    border-radius:5px;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:10px;
+    margin-bottom:12px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    background:#2c3e50;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1a252f;
+}
+
+footer{
+    text-align:center;
+    background:#2c3e50;
+    color:white;
+    padding:15px;
+}
