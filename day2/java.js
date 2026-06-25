@@ -1,3 +1,6 @@
-console.log("Hello, World!");
-console.log("This is a JavaScript file.");
-console.log("You can run this file using Node.js or in a browser console.");
+let a = 5;
+let b = 10;
+function addNumbers(a,b) {
+    return a + b;
+} 
+console.log(addNumbers(a,b));
