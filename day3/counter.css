@@ -15,7 +15,7 @@ body{
 
     align-items:center;
 
-    background:linear-gradient(135deg,#4facfe,#00f2fe,#43e97b);
+    background:linear-gradient(135deg,#4facfe,#a71cd2,#43e97b);
 
 }
 
@@ -105,12 +105,12 @@ button:hover{
 
 #increase{
 
-    background:#28a745;
+    background:#07bb31;
 }
 
 #decrease{
 
-    background:#dc3545;
+    background:#f5051d;
 }
 
 .reset-btn{
