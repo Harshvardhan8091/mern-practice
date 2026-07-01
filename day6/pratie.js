@@ -39,3 +39,8 @@ function getOrderDetails() {
         console.log("Order details loaded");
     }, 4000);
 }
+
+login();
+getUser();
+getOrders();
+getOrderDetails();
