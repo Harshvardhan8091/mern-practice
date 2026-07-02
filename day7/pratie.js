@@ -9,11 +9,19 @@ const promise=new Promise((resolve, reject) => {
     let success = true;
 setTimeout(() => {
     if (success) {
-        resolve("Logged in");
+        resolve("Logged in dash");
     }
     else{
-        reject("Login failed");
+        reject("Login is failed");
     
     }
 },1000);
+});
+
+promise.then(data => {
+    console.log(data);
+}).catch(error => {
+    console.error(error);
+}).finally(() => {
+    console.log("Login operation is completed.");
 });
