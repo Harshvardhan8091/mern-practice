@@ -25,3 +25,19 @@ function getoffers() {
         }, 2000);
     });
 }
+
+function getCategories() {
+
+    return new Promise((resolve, reject) => {
+    //    let success = true;
+ let success = false ;
+        setTimeout(() => {
+            if (success) {
+                resolve('Categories Loaded');}
+            
+             else {
+                reject('Categories loading failed');
+            }
+        }, 3000);
+    });
+}
