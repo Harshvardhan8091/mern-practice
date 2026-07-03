@@ -41,3 +41,52 @@ function getCategories() {
         }, 3000);
     });
 }
+
+
+// Promise.all([
+//     getProducts(),
+//     getoffers(),
+//     getCategories()
+// ])
+//     .then((results) => {
+//         console.log('success',results);
+//     })
+//     .catch((error) => {
+//         console.error('failed' ,error);
+//     });
+
+Promise.allSettled([
+    getProducts(),
+    getoffers(),
+    getCategories()
+])
+    .then((results) => {
+        console.log('success',results);
+    })
+    .catch((error) => {
+        console.error('failed' ,error);
+    });
+
+// Promise.race([
+//     getProducts(),
+//     getoffers(),
+//     getCategories()
+// ])
+//     .then((results) => {
+//         console.log('success',results);
+//     })
+//     .catch((error) => {
+//         console.error('failed' ,error);
+//     });
+
+// Promise.any([
+//     getProducts(),
+//     getoffers(),
+//     getCategories()
+// ])
+//     .then((results) => {
+//         console.log('success',results);
+//     })
+//     // .catch((error) => {
+//     //     console.error('failed' ,error);
+//     // });
