@@ -1,0 +1,139 @@
+.dashboard-page {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 24px 20px 80px;
+	text-align: left;
+}
+
+.dashboard-header {
+	margin-bottom: 22px;
+}
+
+.dashboard-kicker {
+	margin: 0 0 8px;
+	text-transform: uppercase;
+	letter-spacing: 0.18em;
+	font-size: 0.75rem;
+	color: var(--accent);
+}
+
+.dashboard-header h2 {
+	margin: 0 0 12px;
+	font-size: 2rem;
+	color: var(--text-h);
+}
+
+.dashboard-copy {
+	max-width: 760px;
+	margin: 0;
+	color: var(--text);
+	line-height: 1.7;
+}
+
+.course-grid {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 18px;
+}
+
+.course-card {
+	overflow: hidden;
+	border: 1px solid var(--surface-border);
+	border-radius: 14px;
+	background: var(--surface);
+	box-shadow: var(--shadow);
+}
+
+.course-image {
+	display: block;
+	width: 100%;
+	aspect-ratio: 3 / 2;
+	object-fit: cover;
+	background: var(--surface-soft);
+}
+
+.course-content {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	padding: 16px;
+}
+
+.course-topline,
+.course-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 10px;
+}
+
+.course-topline span {
+	border: 1px solid var(--accent-border);
+	border-radius: 999px;
+	background: var(--accent-bg);
+	color: var(--accent);
+	font-size: 0.78rem;
+	font-weight: 700;
+	padding: 4px 10px;
+}
+
+.course-topline strong {
+	color: var(--text-h);
+	font-size: 1rem;
+}
+
+.course-card h3 {
+	min-height: 54px;
+	margin: 0;
+	color: var(--text-h);
+	font-size: 1.08rem;
+	line-height: 1.35;
+}
+
+.course-card p {
+	margin: 0;
+	color: var(--text);
+	font-size: 0.92rem;
+}
+
+.course-footer {
+	margin-top: 4px;
+	color: var(--text);
+	font-size: 0.9rem;
+}
+
+.course-footer button {
+	border: 1px solid var(--accent-border);
+	border-radius: 8px;
+	background: linear-gradient(180deg, #ff5c5c, #b30000);
+	color: var(--button-text);
+	font: inherit;
+	font-size: 0.9rem;
+	font-weight: 700;
+	padding: 8px 12px;
+	cursor: pointer;
+}
+
+@media (max-width: 920px) {
+	.course-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media (max-width: 620px) {
+	.dashboard-page {
+		padding: 18px 16px 80px;
+	}
+
+	.dashboard-header h2 {
+		font-size: 1.55rem;
+	}
+
+	.course-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.course-card h3 {
+		min-height: auto;
+	}
+}

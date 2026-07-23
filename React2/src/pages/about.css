@@ -1,0 +1,77 @@
+.about-section {
+	padding: 0 20px 32px;
+}
+
+.about-card {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 28px;
+	border: 1px solid var(--surface-border);
+	border-radius: 18px;
+	background: var(--surface);
+	box-shadow: var(--shadow);
+	text-align: left;
+}
+
+.about-kicker {
+	margin: 0 0 8px;
+	text-transform: uppercase;
+	letter-spacing: 0.18em;
+	font-size: 0.75rem;
+	color: var(--accent);
+}
+
+.about-card h2 {
+	margin: 0 0 12px;
+	font-size: 2rem;
+	line-height: 1.15;
+	color: var(--text-h);
+}
+
+.about-copy {
+	max-width: 760px;
+	margin: 0;
+	color: var(--text);
+	line-height: 1.7;
+}
+
+.about-stats {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 14px;
+	margin-top: 22px;
+}
+
+.about-stats div {
+	padding: 16px;
+	border-radius: 14px;
+	background: var(--surface-soft);
+	border: 1px solid var(--surface-border);
+}
+
+.about-stats strong {
+	display: block;
+	margin-bottom: 6px;
+	color: var(--text-h);
+	font-size: 0.98rem;
+}
+
+.about-stats span {
+	display: block;
+	color: var(--text);
+	line-height: 1.5;
+}
+
+@media (max-width: 800px) {
+	.about-card {
+		padding: 22px;
+	}
+
+	.about-card h2 {
+		font-size: 1.5rem;
+	}
+
+	.about-stats {
+		grid-template-columns: 1fr;
+	}
+}
